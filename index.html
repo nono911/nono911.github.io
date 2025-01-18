@@ -22,33 +22,56 @@
         }
         h1 {
             color: #333;
+              text-align: left;
         }
         p {
             color: #666;
             line-height: 1.6;
+              text-align: left;
         }
         .button {
             display: inline-block;
-            margin: 15px;
+
             padding: 10px 20px;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            
+            
         }
         .button.android {
             background-color: #3ddc84;
         }
         .button.ios {
-            background-color: #007aff;
+            background-color: #D0D6DD;
+            pointer-events: none;
+  			cursor: default;
         }
+        .flex-container {
+  			display: flex;
+  			align-items: stretch;
+		}
+
+		.flex-container > div {
+			color: white;
+			text-align: center;
+			font-size: 18px;
+		}
     </style>
 </head>
 <body>
     <div class="container">
+		<img src="main_logo.png">
         <h1>NEO Product Center</h1>
-        <img src="main_logo.png">
-        <p>แอพพลิเคชั่น Product Center สำหรับทดสอบ</p>
-        <a href="https://drive.google.com/file/d/1QnNVD8y_YXBBdvYKPX5ZdbDt2sk5LFu-/view?usp=share_link0" class="button android">Download for Android (APK)</a>
+        <div class="flex-container">
+			<div style="flex-grow: 1">
+				<a href="https://drive.google.com/file/d/1QnNVD8y_YXBBdvYKPX5ZdbDt2sk5LFu-/view?usp=share_link0" class="button android">Download for Android (APK)</a>
+			</div>
+			<div style="flex-grow: 1">
+				<a href="" class="button ios">Download for iOS (IPA)</a>
+			</div>
+		</div>
+        <p>***แอพพลิเคชั่น Product Center สำหรับทดสอบ</p>
     </div>
 </body>
 </html>
