@@ -13,8 +13,8 @@
             background-color: #f4f4f9;
         }
         .container {
-            max-width: 600px;
-            margin: 50px auto;
+            max-width: auto;
+            margin: 50px 20px;
             padding: 20px;
             background: white;
             border-radius: 10px;
@@ -35,6 +35,7 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
+           	margin: 5px;
         }
         .button.android {
             background-color: #3ddc84;
@@ -46,13 +47,12 @@
         }
         .flex-container {
             display: flex;
-            align-items: stretch;
+            flex-direction: column;
         }
         .flex-container > div {
             color: white;
             text-align: center;
-            font-size: 18px;
-	    margin: 10px;
+            font-size: 18px;            
         }
         img {
             max-width: 100%;
@@ -64,14 +64,14 @@
 </head>
 <body>
     <div class="container">
-		<img src="main_logo.png">
+	<img src="main_logo.png">
         <h1>NEO Product Center</h1>
         <div class="flex-container">
-		<div style="flex-grow: 1">
+		<div >
 			<a href="https://drive.google.com/file/d/1QnNVD8y_YXBBdvYKPX5ZdbDt2sk5LFu-/view?usp=share_link0" class="button android">Download for Android (APK)</a>
 		</div>
-		<div style="flex-grow: 1">
-			<a href="" class="button ios">iOS (coming soon)</a>
+		<div >
+			<a href="" class="button ios">for iOS (IPA) coming soon</a>
 		</div>
 	</div>
         <p>***แอพพลิเคชั่น Product Center สำหรับทดสอบ</p>
